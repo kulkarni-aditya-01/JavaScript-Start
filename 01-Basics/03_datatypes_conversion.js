@@ -32,7 +32,10 @@ console.log(c, typeof c);
 let d = 2 + 2 + "3" ;   //here 2+2 will add as 4 and the 3 as string will append with it to form the 43 
 console.log(d, typeof d);
 
-
+console.log(typeof NaN);
+console.log(' '+ NaN);
+var x = NaN+ ' ';
+console.log(typeof x);
 
 
 
