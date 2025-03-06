@@ -25,6 +25,35 @@ console.log(typeof g);
 console.log("By this we can make the observation that this all non primitive datatypes are the in the object type :) ");
 
 
+//stack(primitive) : Copy of the value or the element stored at stack  !!
+// heap(non-primitive) : Always get the refrence of the element not the copy !!
+
+let num1 = 303  ;
+let num2 = num1 ;
+num2 = 202 ;
+
+console.log(num1);
+console.log(num2);
+
+console.log("This is the primitive datatype creates the memeory on the stack and uses the copy not the pointer/refrence");
+
+let obj1 = {
+    user : "aditya@yoyo.com",
+    id : "beshram",
+    name : "Aditya",
+    password : "aditya@2005" 
+};
+
+let obj2=obj1 ;
+obj2.id= "nalayak" ;
+
+console.log(obj1.id);
+
+console.log("This is the one of the most imp concept to learn that heap uses the refrence always not uses the copy to save memory");
+
+
+
+
 
 
 
