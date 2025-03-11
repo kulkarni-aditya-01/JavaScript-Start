@@ -35,7 +35,8 @@ console.log(d, typeof d);
 console.log(typeof NaN);
 console.log(' '+ NaN);
 var x = NaN+ ' ';
-console.log(typeof x);
+console.log(typeof x, " this ' ' after the concatenation changes the type of the Nan : ");
+
 
 
 
