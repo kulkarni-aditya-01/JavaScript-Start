@@ -46,13 +46,13 @@ function handleObject(anyobject){
 
 handleObject(user) ;
 
-const arr = [1,2,3,4,5,6] ;
+const arr = ["Aditya","Anil","Kulkarni"] ;
 
 let ans = (arr) => {
     return arr.toString() ;
 }
 
-console.log(typeof ans(arr));
-
+console.log(ans(arr));
+console.log(typeof ans(arr) + " type of the ans function return value and the typeof element in the originaal array iS:  " +typeof arr[2]);
 
 
