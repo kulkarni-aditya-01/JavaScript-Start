@@ -22,14 +22,20 @@ function chai(){
 }
 chai()
 
-const test = () =>{
-//     let username = "hitesh"
-//     console.log(this.username) ;  //it is also giving the same error as in the above shown so work in the object only
-    console.log(this.myobj)
-}
 let myobj = {
     username : "aditya",
     id :1234,
     age : 30
 }
-test()
+const test = () =>{
+//     let username = "hitesh"
+//     console.log(this.username) ;  //it is also giving the same error as in the above shown so work in the object only
+    console.log(this) //this is allowd it inherots the global objecct 
+}
+test() //this is giving the output as undefined because arrwo function unable to inherited the immediate outer object
+
+let addTwoNum = (num1, num2) => (num1+num2)  //this is return int becasue the using the paranthesis 
+
+
+let add = addTwoNum(3,4)
+console.log(add)
